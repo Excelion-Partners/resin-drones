@@ -1,0 +1,33 @@
+{
+  "name": "lucy-in-the-sky",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint test index.js",
+    "test": "mocha ./test/drone.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-iot-device-sdk": "^1.0.14",
+    "config": "^1.25.1",
+    "firebase": "^3.7.5",
+    "keypress": "^0.2.1",
+    "mocha": "^3.2.0",
+    "rolling-spider": "^1.7.0",
+    "temporal": "^0.5.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "should": "^11.2.1",
+    "sinon": "^2.1.0"
+  }
+}

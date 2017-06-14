@@ -1,0 +1,22 @@
+service: LucyAlexaService
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  environment:
+    AWS_IOT_ENDPOINT: xxxxxxxxxxxxx.iot.us-east-1.amazonaws.com
+    RESIN_DEVICE_ID: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  iamRoleStatements:
+    -  Effect: "Allow"
+       Action:
+         - "iot:Publish"
+       Resource: "*"
+
+functions:
+  flyDrones:
+    handler: handler.flyDrones
+    events:
+      - alexaSkill
+
+plugins:
+  - serverless-offline

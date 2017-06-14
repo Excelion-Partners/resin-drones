@@ -1,0 +1,25 @@
+service: ResinAWSLambdaService
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  environment:
+    RESIN_EMAIL: you@email.com
+    RESIN_PASSWORD: xxxxxxxxxxxxxxxx
+    RESINRC_DATA_DIRECTORY: /tmp
+  iamRoleStatements:
+    -  Effect: "Allow"
+       Action:
+         - "iot:*"
+       Resource: "*"
+
+functions:
+  provision:
+    handler: index.provision
+    events:
+      - http:
+          path: provision
+          method: post
+
+plugins:
+  - serverless-offline

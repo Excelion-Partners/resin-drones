@@ -1,0 +1,25 @@
+{
+  "name": "aws-alexa-skill",
+  "version": "1.0.0",
+  "description": "This example demonstrates how to use an AWS Lambdas for your custom Alexa skill.",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+	"lint": "eslint handler.js"
+  },
+  "dependencies": {
+    "alexa-sdk": "^1.0.9",
+    "firebase": "^4.1.1"
+  },
+  "devDependencies": {
+	"babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "serverless-offline": "^3.14.1"
+  }
+}
