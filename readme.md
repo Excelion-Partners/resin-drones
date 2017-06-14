@@ -2,7 +2,6 @@
 # Managing a Fleet of Drones with Resin 
 ## Using Resin, Amazon Web Services (AWS) IoT, & NodeJS
 
-![Resin + Drones]
 (https://s3.amazonaws.com/lucy-devops/resin-drone.png)
 
 ## For step-by-step instructions, visit...
